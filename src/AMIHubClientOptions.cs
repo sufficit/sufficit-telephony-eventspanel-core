@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Sufficit.Telephony.EventsPanel
@@ -11,12 +10,11 @@ namespace Sufficit.Telephony.EventsPanel
     {
         public const string SECTIONNAME = "Sufficit:Telephony:AMIHubClient";
 
-        [JsonPropertyName("endpoint")]
-        public Uri EndPoint { get; set; } = default!;
+        public Uri Endpoint { get; set; } = default!;
 
         public Exception? Validate()
         {
-            if(EndPoint != null)
+            if(Endpoint != null)
             {
                 return null;
             } 
