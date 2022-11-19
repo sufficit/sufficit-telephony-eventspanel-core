@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
 
-	<PropertyGroup Label="Targeting">
+	<PropertyGroup Label="Sufficit Targeting">
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<LangVersion>10.0</LangVersion>
-		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>8.0</LangVersion>
+		<ImplicitUsings>false</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<RootNamespace>Sufficit.Telephony.EventsPanel</RootNamespace>
 	</PropertyGroup>
