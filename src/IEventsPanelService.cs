@@ -12,8 +12,6 @@ namespace Sufficit.Telephony.EventsPanel
 
         bool IsConfigured { get; }
 
-        Task StartAsync(CancellationToken cancellationToken);
-
-        Task StopAsync(CancellationToken cancellationToken);
+        Task ExecuteAsync(CancellationToken cancellationToken);
     }
 }

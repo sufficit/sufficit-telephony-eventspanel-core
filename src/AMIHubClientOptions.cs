@@ -12,6 +12,12 @@ namespace Sufficit.Telephony.EventsPanel
 
         public Uri Endpoint { get; set; } = default!;
 
+        public override bool Equals(object obj)
+            => obj is AMIHubClientOptions p && p.Endpoint == Endpoint;
+
+        public override int GetHashCode()
+            => Endpoint.GetHashCode();
+
         public Exception? Validate()
         {
             if(Endpoint != null)
