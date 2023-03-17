@@ -10,13 +10,13 @@ namespace Sufficit.Telephony.EventsPanel
     {
         public const string SECTIONNAME = "Sufficit:Telephony:AMIHubClient";
 
-        public Uri Endpoint { get; set; } = default!;
+        public Uri? Endpoint { get; set; }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
             => obj is AMIHubClientOptions p && p.Endpoint == Endpoint;
 
         public override int GetHashCode()
-            => Endpoint.GetHashCode();
+            => (Endpoint!).GetHashCode();
 
         public Exception? Validate()
         {

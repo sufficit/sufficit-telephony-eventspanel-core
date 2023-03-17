@@ -8,8 +8,6 @@ namespace Sufficit.Telephony.EventsPanel
 {
     public interface IEventsPanelService
     {
-        void Configure(AMIHubClientOptions options);
-
         bool IsConfigured { get; }
 
         Task ExecuteAsync(CancellationToken cancellationToken);
