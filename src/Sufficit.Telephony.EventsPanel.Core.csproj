@@ -60,6 +60,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="System.Text.Json" Version="*" />
+	  <PackageReference Include="System.Text.Json" Version="[6.*,8.0.0)" />
 	</ItemGroup>
 </Project>
