@@ -22,7 +22,7 @@ namespace Sufficit.Telephony.EventsPanel
 
         public Exception? Validate()
         {
-            if(Endpoint != null)
+            if (Endpoint != null)
             {
                 return null;
             } 

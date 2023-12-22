@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sufficit.Telephony.EventsPanel
 {
-    public interface IEventsPanelOptions
+    public interface IEventsPanelOptions : IEventsPanelCardsAreaOptions
     { 
         /// <summary>
         /// Value in Milliseconds <br />  
@@ -14,10 +14,11 @@ namespace Sufficit.Telephony.EventsPanel
         /// </summary>
         uint RefreshRate { get; }
 
-        bool ShowTrunks { get; }
-
         int MaxButtons { get; }
 
+        /// <summary>
+        /// Should auto generate new cards from received events
+        /// </summary>
         bool AutoFill { get; }
     }
 }
