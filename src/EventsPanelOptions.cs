@@ -26,14 +26,17 @@ namespace Sufficit.Telephony.EventsPanel
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public bool AutoFill { get; set; }
 
-        [JsonIgnore]
-        public Func<EventsPanelCardInfo, Task<string>>? CardAvatarHandler { get; set; }
-
         public bool Equals(EventsPanelOptions? other)
             => other != null &&
             other.RefreshRate == RefreshRate &&
             other.OnlyPeers == OnlyPeers &&
             other.MaxButtons == MaxButtons &&
             other.AutoFill == AutoFill;
+
+        public override bool Equals(object? obj)
+            => Equals(obj as EventsPanelOptions);        
+
+        public override int GetHashCode()
+            => (RefreshRate, OnlyPeers, MaxButtons, AutoFill).GetHashCode();
     }
 }
