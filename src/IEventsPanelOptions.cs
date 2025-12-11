@@ -20,5 +20,12 @@ namespace Sufficit.Telephony.EventsPanel
         /// Should auto generate new cards from received events
         /// </summary>
         bool AutoFill { get; }
+
+        /// <summary>
+        /// Maximum number of calls to display in queue cards <br />
+        /// 0 = unlimited, default = 5 <br />
+        /// When limit is exceeded, shows the oldest calls (longest waiting time)
+        /// </summary>
+        int MaxQueueCalls { get; }
     }
 }
