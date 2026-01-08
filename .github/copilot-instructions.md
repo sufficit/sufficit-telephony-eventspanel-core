@@ -67,3 +67,6 @@
         // implementation
     }
 #endregion
+
+## .NET Framework Guidelines
+* **net7.0 Support**: Maintain net7.0 target framework support for compatibility with telephony-related dependencies and events panel systems.
