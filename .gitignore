@@ -1,5 +1,6 @@
-src/bin/
-src/obj/
-src/.vs/
+**/bin/
+**/obj/
+**/tmp/
+**/.vs/
 src/Sufficit.Telephony.EventsPanel.Core.csproj
 *.nupkg
