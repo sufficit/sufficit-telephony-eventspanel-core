@@ -6,3 +6,5 @@ src/Sufficit.Telephony.EventsPanel.Core.csproj
 *.nupkg
 **/.artifacts/
 **/artifacts/
+# Worktrees (padrao): arvores de trabalho em <repo>/.worktrees/
+**/.worktrees/
